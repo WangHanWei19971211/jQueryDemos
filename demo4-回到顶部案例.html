@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.4.0.js" ></script>
+		<script type="text/javascript" src="js/demo4-回到顶部案例.js" ></script>
+		<title>demo4-回到顶部</title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.back{
+				position: fixed;
+				top:5px;
+				right: 5px;
+				padding: 5px;
+				font-size: 15px;
+				width: 30px;
+				height: 30px;
+				background-color: rgba(255,100,60,0.2);
+				line-height: 15px;
+				align-content: center;
+				/*cursor:pointer;//手型。这里直接设置在css中 display: none就不起作用了，所以放在js中，显示后添加该属性*/
+				display: none;
+			z-index: 100;//*使div在最上面*/
+			}
+			.content{
+				height: 1300px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>第一行</p>
+		<p>试试向下滚动屏幕</p>
+		<div class="back">返回<br />顶部</div>
+		<div class="content"></div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.4.0.js" ></script>
+		<script type="text/javascript" src="js/demo6-弹幕案例.js" ></script>
+		<title>demo6-弹幕案例</title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.box2{
+				height: 300px;
+			}
+			.box2_content{
+				position: relative;/*使子元素<span>(设置了position:absolute)能相对这个元素定位*/
+				background-color: antiquewhite;
+				height: 250px;
+				overflow: hidden;
+			}
+			.box2_bottom{
+				background-color: gainsboro;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box2">
+			<div class="box2_content"></div>
+			<div class="box2_bottom">
+				<input type="text"  class="box2_text"/>
+				<button id="box2_btn">发送弹幕</button>
+			</div>
+		</div>
+	</body>
+</html>
