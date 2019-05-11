@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.4.0.js" ></script>
+		<script type="text/javascript" src="js/demo7-下拉出现导航案例.js" ></script>
+		<title>demo7-导航案例</title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.header{
+				width: 100%;
+			}
+			.header .top{
+				height: 100px;
+				width: 100%;
+				background-color: gray;
+			}
+			/*导航*/
+				.header .menu{
+					height: 30px;
+					width: 100%;
+					background-color: rgba(245, 235, 255, 1);
+					box-shadow: 0 0 1px 0 gray;
+					z-index: 80;
+				}
+				#fixedMenu{/*固定的导航*/
+					position: fixed;
+					top: 0px;
+					float: left;
+				}
+				.header .menu_ul,
+				.header .menu_ul ul{
+					list-style-type: none;
+				}
+				.header .menu_ul>li{
+					position: relative;
+					float: left;
+					margin-left: 10px;
+					line-height: 30px;
+				}
+				.header .menu_ul>li>a{/*导航栏的a标签*/
+					text-decoration: none;
+					color: black;
+					border: 1px solid rgba(28, 59, 7, 0);/*透明边框，为了与hover大小一致*/
+				}
+				.header .menu_ul>li>a:hover{
+					background-color: rgba(255, 255, 255, 0.5);
+			    	border: 1px solid rgba(255, 255, 255, 0.7);
+				}
+				.header .menu_ul>li>div{/*子菜单盒子*/
+					position: absolute;
+					top:30px;
+					width: 50px;
+					background-color:  rgba(255, 255, 255, 0.5);
+					display: none;/*隐藏*/
+					z-index: 100;
+					box-shadow: 0 1px 2px 0 rgba(0,0,0,0.35);
+				}
+				.header .menu_ul>li>div>a{/*子菜单盒子中的标签*/
+					text-decoration: none;
+					float: left;
+				}
+				.contentBox{
+					height: 1200px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="top"></div>
+			<div class="menu">
+				<ul class="menu_ul">
+					<li><a href="#">HTML</a>
+						<div>
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+						</div>
+					</li>
+					<li><a href="#">CSS</a>
+						<div>
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+						</div>
+					</li>
+					<li><a href="#">jQuery</a>
+						<div>
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+						</div>
+					</li>
+					<li><a href="#">JavaScript</a>
+						<div>
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+							<a href="#">111</a><br />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="contentBox"></div>
+	</body>
+</html>
