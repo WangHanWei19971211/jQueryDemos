@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.4.0.js" ></script>
+		<script type="text/javascript" src="js/demo10-深浅复制比较.js" ></script>
+		<title>demo10-深浅复制比较</title>
+		<style>
+			.box-3{
+				margin-top: 50px;
+				width: 500px;
+				height: 500px;
+				border: 1px solid white;
+			}
+			.box-3>p{
+				font-size: 20px;
+				text-align: center;
+			}
+			.box-3 li{
+				width: 30px;
+				background-color: white;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box-3">
+	    	<p>深浅复制比较</p>
+	    	<p>点击li弹出警告框</p>
+	    	<p>深复制会复制元素及其事件，浅复制则只复制元素</p>
+	    	<p>所以深复制的li能触发click事件，浅复制不行</p>
+	    	<button id="bth-qian">浅复制</button>
+	    	<button id="bth-shen">深复制</button>
+	    	<ul>
+	    		<li>1</li>
+	    		<li>2</li>
+	    		<li>3</li>
+	    		<li>4</li>
+	    	</ul>
+	    </div>
+	</body>
+</html>
