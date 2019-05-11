@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-3.4.0.js" ></script>
+		<script type="text/javascript" src="js/demo9-无限循环滚动广告.js" ></script>
+		<title>demo9-无限循环滚动广告</title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.box-2{
+				width: 602px;
+				height: 200px;
+				border: 1px solid white;
+				margin-top: 50px;
+				overflow: hidden;
+			}
+			.box-2 .ul1{
+				padding: 0px;
+				width: 1800px;
+			}
+			.box-2 .ul1 li{
+				list-style: none;
+				float: left;
+				background-color: black;
+			}
+			.box-2 .ul1 li img{
+				width: 300px;
+				height: 198px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box-2">
+			<ul class="ul1">
+				<li><img src="./img/pic01.jpg" /> </li>
+				<li><img src="./img/pic02.jpg" /> </li>
+				<li><img src="./img/pic03.jpg" /> </li>
+				<li><img src="./img/pic04.jpg" /> </li>
+				<li><img src="./img/pic01.jpg" /> </li>
+				<li><img src="./img/pic02.jpg" /> </li>
+			</ul>
+		</div>
+	</body>
+</html>
